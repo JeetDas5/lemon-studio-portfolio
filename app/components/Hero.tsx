@@ -89,12 +89,12 @@ export default function Hero() {
             className="mt-24 md:mt-12 md:mr-4 perspective-1000 z-20"
           >
             <div className="glass rounded-b-[50px] rounded-t-[60px] py-6 px-12 pt-32 w-96 h-[450px] relative hover:-translate-y-3 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] transition-all duration-500 backdrop-blur-xl group">
-              <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[450px] h-[500px] transition-transform duration-700 ease-out group-hover:scale-110 group-hover:-translate-y-4">
+              <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[450px] h-[500px] ">
                 <Image
                   src="/plants/plant7.svg"
                   alt="Calathea plant"
                   fill
-                  className="object-contain drop-shadow-[0_30px_30px_rgba(0,0,0,0.4)] filter contrast-125"
+                  className="object-contain drop-shadow-[0_30px_30px_rgba(0,0,0,0.4)] filter contrast-125 transition-transform duration-700 ease-out group-hover:scale-110 group-hover:-translate-y-4"
                 />
               </div>
 
@@ -155,13 +155,13 @@ export default function Hero() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1, type: "spring", bounce: 0.3 }}
-              className="relative w-[600px] h-[550px] -mt-40 md:-mt-48 md:-ml-16 z-20 transition-transform duration-700 ease-out group-hover:scale-[1.15] group-hover:-rotate-3 group-hover:-translate-y-2"
+              className="relative w-[600px] h-[550px] -mt-40 md:-mt-48 md:-ml-16 z-20 "
             >
               <Image
                 src="/plants/plant1.svg"
                 alt="Desk Plant"
                 fill
-                className="object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] filter contrast-125 w-[600px] h-[550px] scale-125"
+                className="object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] filter contrast-125 w-[600px] h-[550px] transition-transform duration-700 ease-out group-hover:scale-[1.15] group-hover:-rotate-3 group-hover:-translate-y-2"
               />
             </motion.div>
 
