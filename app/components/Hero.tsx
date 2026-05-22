@@ -1,10 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import { Play, Star, ShoppingBag } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden pt-16 pb-32">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] md:w-full md:h-full -z-10 pointer-events-none opacity-80">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 0.8, scale: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] md:w-full md:h-full -z-10 pointer-events-none"
+      >
         <Image
           src="/plants/hero.svg"
           alt="Background Plant"
@@ -12,11 +20,17 @@ export default function Hero() {
           className="object-cover md:object-contain object-top drop-shadow-2xl"
           priority
         />
-      </div>
+      </motion.div>
 
       <div className="w-full px-12 mx-auto relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-0 mt-8 px-2">
-          <div className="max-w-3xl animate-fade-in-up z-20">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="max-w-3xl z-20"
+          >
             <h1 className="text-6xl md:text-7xl lg:text-[5.5rem] font-bold text-white mb-6 tracking-tight drop-shadow-lg leading-tight">
               Breath Natural
             </h1>
@@ -37,37 +51,43 @@ export default function Hero() {
               </button>
             </div>
 
-            <div className="glass rounded-4xl p-4 flex gap-4 items-center w-max hover:-translate-y-1 hover:shadow-xl hover:shadow-white/5 transition-all duration-300 backdrop-blur-md">
-              <div className="w-12 h-12 rounded-full overflow-hidden relative bg-[#1a3824] shrink-0 border border-white/20">
-                <Image
-                  src="/persons/alena.svg"
-                  alt="Alisa Padel"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="pr-4">
-                <div className="flex items-center gap-2 mb-0.5">
-                  <h4 className="text-white font-medium text-sm">
+            <div className="glass rounded-3xl p-5 flex flex-col gap-4 w-max hover:-translate-y-1 hover:shadow-xl hover:shadow-white/5 transition-all duration-300 backdrop-blur-md">
+              <div className="flex gap-4 items-center">
+                <div className="w-12 h-12 rounded-full overflow-hidden relative bg-[#1a3824] shrink-0 border border-white/20">
+                  <Image
+                    src="/persons/alena.svg"
+                    alt="Alena Padel"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 className="text-white font-medium text-sm mb-1">
                     Alena Padel
                   </h4>
+                  <div className="flex text-[#FFB800] text-[10px] gap-0.5">
+                    <Star className="w-3 h-3 fill-[#FFB800]" />
+                    <Star className="w-3 h-3 fill-[#FFB800]" />
+                    <Star className="w-3 h-3 fill-[#FFB800]" />
+                    <Star className="w-3 h-3 fill-[#FFB800]" />
+                    <Star className="w-3 h-3 fill-[#FFB800]" />
+                  </div>
                 </div>
-                <div className="flex text-[#FFB800] text-[10px] mb-1.5 gap-0.5">
-                  <Star className="w-3 h-3 fill-[#FFB800]" />
-                  <Star className="w-3 h-3 fill-[#FFB800]" />
-                  <Star className="w-3 h-3 fill-[#FFB800]" />
-                  <Star className="w-3 h-3 fill-[#FFB800]" />
-                  <Star className="w-3 h-3 fill-[#FFB800]" />
-                </div>
-                <p className="text-[11px] text-white/60 max-w-[220px] leading-snug">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
-                </p>
               </div>
+              <p className="text-[11px] text-white/60 max-w-[220px] leading-snug">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="mt-24 md:mt-12 md:mr-4 perspective-1000 z-20">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            className="mt-24 md:mt-12 md:mr-4 perspective-1000 z-20"
+          >
             <div className="glass rounded-b-[50px] rounded-t-[60px] py-6 px-12 pt-32 w-96 h-[450px] relative hover:-translate-y-3 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] transition-all duration-500 backdrop-blur-xl group">
               <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[450px] h-[500px] transition-transform duration-700 ease-out group-hover:scale-110 group-hover:-translate-y-4">
                 <Image
@@ -95,27 +115,63 @@ export default function Hero() {
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="w-full mt-32 md:mt-16 mb-24 md:mb-32 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg tracking-tight">
-            Our Trendy plants
-          </h2>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="w-full mt-32 md:mt-16 mb-24 md:mb-32 flex justify-center relative z-10"
+        >
+          <div className="relative inline-block">
+            <div className="absolute top-0 right-0 w-10 h-10 pointer-events-none">
+              <Image
+                src="/vectors/top-right.svg"
+                alt="Decor"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="absolute -bottom-2 left-0 w-10 h-10 pointer-events-none">
+              <Image
+                src="/vectors/left-bottom.svg"
+                alt="Decor"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg tracking-tight px-4">
+              Our Trendy plants
+            </h2>
+          </div>
+        </motion.div>
 
         <div className="flex flex-col gap-28 md:gap-36 w-full mx-auto pb-10">
-          <div className="glass rounded-[8rem] p-6 md:p-4 flex flex-col md:flex-row items-center justify-between relative hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.5)] transition-all duration-500 group backdrop-blur-2xl md:w-[92%]">
-            <div className="relative w-[600px] h-[550px] -mt-40 md:-mt-48 md:-ml-16 z-20 transition-transform duration-700 ease-out group-hover:scale-[1.15] group-hover:-rotate-3 group-hover:-translate-y-2">
+          <div className="glass rounded-[125px] p-6 md:p-10 md:py-0 md:pr-16  flex flex-col md:flex-row items-center justify-between relative hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.5)] transition-all duration-500 group backdrop-blur-2xl w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -150 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 1, type: "spring", bounce: 0.3 }}
+              className="relative w-[600px] h-[550px] -mt-40 md:-mt-48 md:-ml-16 z-20 transition-transform duration-700 ease-out group-hover:scale-[1.15] group-hover:-rotate-3 group-hover:-translate-y-2"
+            >
               <Image
                 src="/plants/plant1.svg"
                 alt="Desk Plant"
                 fill
-                className="object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] filter contrast-125 w-[600px] h-[550px] scale-110"
+                className="object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] filter contrast-125 w-[600px] h-[550px] scale-125"
               />
-            </div>
+            </motion.div>
 
-            <div className="mt-10 md:mt-0 flex-1 pl-4 md:pl-8 max-w-xl z-10">
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="mt-10 md:mt-0 flex-1 pl-4 md:pl-8 max-w-xl z-10"
+            >
               <h3 className="text-white text-3xl font-semibold mb-4 tracking-tight drop-shadow-sm">
                 For Small Desk AI Plant
               </h3>
@@ -134,11 +190,17 @@ export default function Hero() {
                   <ShoppingBag className="w-5 h-5" />
                 </button>
               </div>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="glass rounded-[3rem] p-6 md:p-10 md:pl-16 flex flex-col-reverse md:flex-row items-center justify-between relative ml-auto hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.5)] transition-all duration-500 group backdrop-blur-2xl md:w-[92%]">
-            <div className="mt-10 md:mt-0 flex-1 pr-4 md:pr-8 max-w-xl z-10">
+          <div className="glass rounded-[125px] p-6 md:p-10 md:py-0 md:pl-32 flex flex-col-reverse md:flex-row items-center justify-between relative hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.5)] transition-all duration-500 group backdrop-blur-2xl w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="mt-10 md:mt-0 flex-1 pr-4 md:pr-8 max-w-xl z-10"
+            >
               <h3 className="text-white text-3xl font-semibold mb-4 tracking-tight drop-shadow-sm">
                 For Fresh Desk AI Plant
               </h3>
@@ -157,16 +219,22 @@ export default function Hero() {
                   <ShoppingBag className="w-5 h-5" />
                 </button>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="relative w-[600px] h-[550px] -mt-40 md:-mt-48 md:-ml-16 z-20 transition-transform duration-700 ease-out group-hover:scale-[1.15] group-hover:-rotate-3 group-hover:-translate-y-2">
+            <motion.div
+              initial={{ opacity: 0, x: 150 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 1, type: "spring", bounce: 0.3 }}
+              className="relative w-[600px] h-[500px] -mt-40 md:-mt-32 md:-mr-16 z-20 transition-transform duration-700 ease-out group-hover:scale-[1.15] group-hover:rotate-3 group-hover:-translate-y-2"
+            >
               <Image
                 src="/plants/plant2.svg"
                 alt="Desk Plant"
                 fill
-                className="object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] filter contrast-125 w-[600px] h-[550px] scale-110"
+                className="object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] filter contrast-125 w-[600px] h-[500px] scale-125"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <div className="w-full mx-auto">
+      <div className="max-w-7xl mx-auto">
         <Navbar />
         <Hero />
         <ProductGrid />
