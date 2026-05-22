@@ -12,8 +12,8 @@ export default function Home() {
         <Navbar />
         <Hero />
         <ProductGrid />
-        <Spotlight />
         <Reviews />
+        <Spotlight />
         <Footer />
       </div>
     </div>
