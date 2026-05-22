@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Play, Star, ShoppingBag } from "lucide-react";
 import { motion } from "framer-motion";
+import Card from "./Card";
 
 export default function Hero() {
   return (
@@ -89,8 +90,11 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="w-full md:w-auto flex justify-center md:block mt-24 md:mt-12 md:mr-4 perspective-1000 z-20"
           >
-            <div className="glass rounded-b-[50px] rounded-t-[60px] py-6 px-8 md:px-12 pt-36 w-full max-w-[360px] sm:w-96 h-[450px] relative hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] transition-all duration-500 backdrop-blur-xl group mx-auto md:mx-0">
-              <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[450px] h-[500px] ">
+            <Card
+              idx="hero-trendy"
+              className="py-6 px-8 md:px-12 pt-36 pb-12 w-full max-w-[360px] sm:w-96 h-[450px]  transition-all duration-500 mx-auto md:mx-0"
+            >
+              <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[450px] h-[500px]">
                 <Image
                   src="/plants/plant7.svg"
                   alt="Calathea plant"
@@ -115,7 +119,7 @@ export default function Hero() {
                   Buy Now
                 </button>
               </div>
-            </div>
+            </Card>
           </motion.div>
         </div>
 

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Card from "./Card";
 
 export default function Reviews() {
   const reviews = [
@@ -23,7 +24,7 @@ export default function Reviews() {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-8 py-20 relative z-10">
+    <section className="max-w-7xl mx-auto px-4 sm:px-8 py-20 relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -54,17 +55,18 @@ export default function Reviews() {
         </div>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {reviews.map((r, idx) => (
-          <motion.div
+          <Card
             key={r.name}
+            idx={idx}
             initial={{ opacity: 0, y: 55 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.7, ease: "easeOut", delay: idx * 0.18 }}
-            className="rounded-[60px] p-6 sm:p-10 bg-[#1e251a] border border-[#2e3728] relative hover:-translate-y-2.5 hover:shadow-[0_25px_50px_-15px_rgba(0,0,0,0.6)] hover:border-[#384332] transition-all duration-500 flex flex-col justify-between h-full group glass"
+            className="pt-22 pb-10 px-8 sm:px-10 flex flex-col justify-between h-full hover:-translate-y-2.5 transition-all duration-500"
           >
-            <div className="flex flex-col gap-8 h-full">
+            <div className="flex flex-col gap-8 h-full relative z-10">
               <div className="flex items-center gap-5">
                 <div className="w-[88px] h-[88px] rounded-full overflow-hidden relative shrink-0 shadow-[0_6px_16px_rgba(0,0,0,0.4)]">
                   <Image
@@ -81,7 +83,7 @@ export default function Reviews() {
                       left: "50%",
                       transform: "translateX(-50%)",
                     }}
-                    className="transition-transform duration-500 group-hover:scale-[1.05]"
+                    className="transition-transform duration-500 "
                   />
                 </div>
                 <div className="flex flex-col gap-1">
@@ -139,7 +141,7 @@ export default function Reviews() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </Card>
         ))}
       </div>
     </section>
