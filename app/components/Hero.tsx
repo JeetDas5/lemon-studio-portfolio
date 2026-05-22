@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative w-full overflow-hidden pt-16 pb-32">
+    <section className="relative w-full overflow-hidden pt-2 pb-32">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 0.8, scale: 1 }}
@@ -17,7 +17,7 @@ export default function Hero() {
           src="/plants/hero.svg"
           alt="Background Plant"
           fill
-          className="object-cover md:object-contain object-top drop-shadow-2xl"
+          className="object-cover object-top drop-shadow-2xl"
           priority
         />
       </motion.div>
@@ -34,15 +34,17 @@ export default function Hero() {
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold text-white mb-6 tracking-tight drop-shadow-lg leading-tight">
               Breath Natural
             </h1>
-            <p className="text-white/80 mb-10 leading-relaxed text-lg font-light max-w-xl drop-shadow-md">
-              Transform your living space with our hand-curated selection of premium indoor plants. Breathe clean, air-purifying oxygen while bringing the serene beauty of nature straight into your home or office.
+            <p className="text-white/80 mb-8 leading-relaxed text-lg font-light max-w-xl drop-shadow-md">
+              Transform your living space with our hand-curated selection of
+              premium indoor plants. Breathe clean, air-purifying oxygen while
+              bringing the serene beauty of nature straight into your home.
             </p>
 
-            <div className="flex items-center gap-6 mb-16">
-              <button className="px-8 py-3.5 rounded-full glass text-white font-medium hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.05)]">
+            <div className="flex items-center gap-6 mb-10">
+              <button className="px-8 py-3.5 rounded-full glass text-white font-medium hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.05)] cursor-pointer">
                 Explore
               </button>
-              <button className="flex items-center gap-3 text-white font-medium hover:text-white/80 hover:-translate-y-0.5 transition-all duration-300 group drop-shadow-md">
+              <button className="flex items-center gap-3 text-white font-medium hover:text-white/80 hover:-translate-y-0.5 transition-all duration-300 group drop-shadow-md cursor-pointer">
                 <div className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center bg-white/5 group-hover:bg-white/10 transition-colors">
                   <Play className="w-5 h-5 ml-1 fill-white" />
                 </div>
@@ -74,7 +76,8 @@ export default function Hero() {
                 </div>
               </div>
               <p className="text-[11px] text-white/60 max-w-[220px] leading-snug">
-                Planto helped me find the perfect low-maintenance Jade Plant. My workspace feels so much more vibrant and alive now!
+                Planto helped me find the perfect low-maintenance Jade Plant. My
+                workspace feels so much more vibrant and alive now!
               </p>
             </div>
           </motion.div>
@@ -86,13 +89,13 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="w-full md:w-auto flex justify-center md:block mt-24 md:mt-12 md:mr-4 perspective-1000 z-20"
           >
-            <div className="glass rounded-b-[50px] rounded-t-[60px] py-6 px-8 md:px-12 pt-32 w-full max-w-[360px] sm:w-96 h-[450px] relative hover:-translate-y-3 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] transition-all duration-500 backdrop-blur-xl group mx-auto md:mx-0">
+            <div className="glass rounded-b-[50px] rounded-t-[60px] py-6 px-8 md:px-12 pt-36 w-full max-w-[360px] sm:w-96 h-[450px] relative hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] transition-all duration-500 backdrop-blur-xl group mx-auto md:mx-0">
               <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[450px] h-[500px] ">
                 <Image
                   src="/plants/plant7.svg"
                   alt="Calathea plant"
                   fill
-                  className="object-contain drop-shadow-[0_30px_30px_rgba(0,0,0,0.4)] filter contrast-125 transition-transform duration-700 ease-out group-hover:scale-110 group-hover:-translate-y-4"
+                  className="object-contain drop-shadow-[0_30px_30px_rgba(0,0,0,0.4)] filter contrast-125 transition-transform duration-700 ease-out group-hover:scale-105 group-hover:-translate-y-2"
                 />
               </div>
 
@@ -174,7 +177,9 @@ export default function Hero() {
                 Jade Plant Dwarf
               </h3>
               <p className="text-white/70 text-sm mb-4 leading-relaxed">
-                A compact, high-oxygen producing plant designed for office desks and bookshelves. It thrives in low-light environments with minimal watering.
+                A compact, high-oxygen producing plant designed for office desks
+                and bookshelves. It thrives in low-light environments with
+                minimal watering.
               </p>
               <div className="text-white text-2xl font-bold mb-4 drop-shadow-sm">
                 Rs. 599/-
@@ -202,16 +207,18 @@ export default function Hero() {
                 Elegance Peace Lily
               </h3>
               <p className="text-white/70 text-sm mb-8 leading-relaxed">
-                An elegant, air-purifying companion featuring lush green foliage. Perfect for adding a fresh, rejuvenating touch to your study table.
+                An elegant, air-purifying companion featuring lush green
+                foliage. Perfect for adding a fresh, rejuvenating touch to your
+                study table.
               </p>
               <div className="text-white text-2xl font-bold mb-6 drop-shadow-sm">
                 Rs. 599/-
               </div>
               <div className="flex items-center justify-center md:justify-start gap-4">
-                <button className="px-8 py-3.5 border border-white/20 rounded-xl text-white font-medium hover:bg-white/10 hover:border-white/40 transition-all duration-300 shadow-sm">
+                <button className="px-8 py-3.5 border border-white/20 rounded-xl text-white font-medium hover:bg-white/10 hover:border-white/40 transition-all duration-300 shadow-sm cursor-pointer">
                   Buy Now
                 </button>
-                <button className="w-[52px] h-[52px] border border-white/20 rounded-xl flex items-center justify-center text-white hover:bg-white/10 hover:border-white/40 transition-all duration-300 shadow-sm">
+                <button className="w-[52px] h-[52px] border border-white/20 rounded-xl flex items-center justify-center text-white hover:bg-white/10 hover:border-white/40 transition-all duration-300 shadow-sm cursor-pointer">
                   <ShoppingBag className="w-5 h-5" />
                 </button>
               </div>

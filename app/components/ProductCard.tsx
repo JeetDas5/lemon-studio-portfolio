@@ -33,7 +33,7 @@ export default function ProductCard({
       </div>
 
       <div className="flex flex-col z-10 md:mt-44 relative h-full justify-end pb-2">
-        <h3 className="text-white text-[28px] font-medium tracking-tight mb-4">
+        <h3 className="text-white mt-22 md:mt-2 text-[28px] font-medium tracking-tight mb-4">
           {title}
         </h3>
         <p className="text-white/60 text-[15px] leading-relaxed font-light mb-8 max-w-[260px]">
