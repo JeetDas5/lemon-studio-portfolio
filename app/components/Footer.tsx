@@ -21,8 +21,7 @@ export default function Footer() {
               </h4>
             </div>
             <p className="text-white/60 text-[16px] leading-[1.75] font-light mt-6 max-w-[340px] font-sans">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Planto is dedicated to bringing clean air and tranquil green aesthetics to modern homes. We source only the healthiest, sustainably-grown indoor plants.
             </p>
           </div>
           

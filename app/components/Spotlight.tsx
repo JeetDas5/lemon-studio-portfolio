@@ -7,11 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Spotlight() {
   const slides = [
     {
-      title: "We Have Small And Best O2 Plants Collection’s",
+      title: "Explore Our Signature High-Oxygen Plants Collection",
       desc1:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Our signature oxygen-producing collection features plants scientifically proven to absorb indoor toxins and release fresh, pure O2 throughout the day.",
       desc2:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "Specially curated for bedrooms and study rooms, these plants thrive under ambient light and require watering only once a week to maintain their lush, deep-green appearance.",
       image: "/plants/plant7.svg",
     },
     {

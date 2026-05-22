@@ -12,12 +12,12 @@ import { motion } from "framer-motion";
 
 export default function ProductGrid() {
   const products = [
-    { title: "Calathea plant", price: "Rs. 309/-", img: plant7 },
-    { title: "Desk plant", price: "Rs. 359/-", img: plant1 },
-    { title: "Calathea ai plant", price: "Rs. 399/-", img: plant3 },
-    { title: "Cal 874 plant", price: "Rs. 259/-", img: plant4 },
-    { title: "Show plant", price: "Rs. 759/-", img: plant5 },
-    { title: "Calat 02 plant", price: "Rs. 659/-", img: plant6 },
+    { title: "Calathea Orbifolia", price: "Rs. 309/-", img: plant7 },
+    { title: "Jade Plant Dwarf", price: "Rs. 359/-", img: plant1 },
+    { title: "Monstera Deliciosa", price: "Rs. 399/-", img: plant3 },
+    { title: "Snake Plant Laurentii", price: "Rs. 259/-", img: plant4 },
+    { title: "Fiddle Leaf Fig", price: "Rs. 759/-", img: plant5 },
+    { title: "Peace Lily Supreme", price: "Rs. 659/-", img: plant6 },
   ];
   return (
     <section className="w-full mx-auto px-4 sm:px-8 py-20 relative z-10 overflow-hidden">

@@ -32,16 +32,19 @@ export default function ProductCard({
         />
       </div>
 
-      <div className="flex flex-col z-10 mt-20 relative h-full justify-end pb-2">
+      <div className="flex flex-col z-10 md:mt-44 relative h-full justify-end pb-2">
         <h3 className="text-white text-[28px] font-medium tracking-tight mb-4">
           {title}
         </h3>
         <p className="text-white/60 text-[15px] leading-relaxed font-light mb-8 max-w-[260px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          Easy-to-grow, pet-safe, and highly effective at naturally cleaning
+          indoor air.
         </p>
-        
+
         <div className="flex items-center justify-between mt-auto">
-          <span className="text-white text-[26px] font-medium tracking-wide">{price}</span>
+          <span className="text-white text-[26px] font-medium tracking-wide">
+            {price}
+          </span>
           <button className="w-[50px] h-[50px] border border-white/30 rounded-2xl flex items-center justify-center text-white hover:bg-white/10 hover:border-white/50 transition-all duration-300 shadow-sm cursor-pointer group-hover:bg-white/5">
             <ShoppingBag className="w-[22px] h-[22px] stroke-[1.5]" />
           </button>

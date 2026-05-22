@@ -35,8 +35,7 @@ export default function Hero() {
               Breath Natural
             </h1>
             <p className="text-white/80 mb-10 leading-relaxed text-lg font-light max-w-xl drop-shadow-md">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Transform your living space with our hand-curated selection of premium indoor plants. Breathe clean, air-purifying oxygen while bringing the serene beauty of nature straight into your home or office.
             </p>
 
             <div className="flex items-center gap-6 mb-16">
@@ -75,8 +74,7 @@ export default function Hero() {
                 </div>
               </div>
               <p className="text-[11px] text-white/60 max-w-[220px] leading-snug">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor.
+                Planto helped me find the perfect low-maintenance Jade Plant. My workspace feels so much more vibrant and alive now!
               </p>
             </div>
           </motion.div>
@@ -104,7 +102,7 @@ export default function Hero() {
                 </p>
                 <div className="flex items-center justify-between mt-1 mb-6">
                   <h3 className="text-white/80 text-2xl tracking-tight">
-                    Calathea plant
+                    Calathea Orbifolia
                   </h3>
                   <span className="text-white/80 text-2xl font-light leading-none">
                     ›
@@ -159,7 +157,7 @@ export default function Hero() {
             >
               <Image
                 src="/plants/plant1.svg"
-                alt="Desk Plant"
+                alt="Jade Plant Dwarf"
                 fill
                 className="object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] filter contrast-125 w-full h-full transition-transform duration-700 ease-out group-hover:scale-[1.15] group-hover:-rotate-3 group-hover:-translate-y-2"
               />
@@ -173,11 +171,10 @@ export default function Hero() {
               className="mt-10 md:mt-0 flex-1 pl-4 md:pl-8 max-w-xl z-10 text-center md:text-left"
             >
               <h3 className="text-white text-3xl font-semibold mb-4 tracking-tight drop-shadow-sm">
-                For Small Desk AI Plant
+                Jade Plant Dwarf
               </h3>
               <p className="text-white/70 text-sm mb-4 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                A compact, high-oxygen producing plant designed for office desks and bookshelves. It thrives in low-light environments with minimal watering.
               </p>
               <div className="text-white text-2xl font-bold mb-4 drop-shadow-sm">
                 Rs. 599/-
@@ -202,11 +199,10 @@ export default function Hero() {
               className="mt-10 md:mt-0 flex-1 pr-4 md:pr-8 max-w-xl z-10 text-center md:text-left"
             >
               <h3 className="text-white text-3xl font-semibold mb-4 tracking-tight drop-shadow-sm">
-                For Fresh Desk AI Plant
+                Elegance Peace Lily
               </h3>
               <p className="text-white/70 text-sm mb-8 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                An elegant, air-purifying companion featuring lush green foliage. Perfect for adding a fresh, rejuvenating touch to your study table.
               </p>
               <div className="text-white text-2xl font-bold mb-6 drop-shadow-sm">
                 Rs. 599/-
@@ -230,7 +226,7 @@ export default function Hero() {
             >
               <Image
                 src="/plants/plant2.svg"
-                alt="Desk Plant"
+                alt="Elegance Peace Lily"
                 fill
                 className="object-contain drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] filter contrast-125 w-full h-full scale-125"
               />

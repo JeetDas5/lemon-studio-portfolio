@@ -7,7 +7,7 @@ export default function Reviews() {
   const reviews = [
     {
       name: "Maxn Raval",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+      text: "Planto is my absolute go-to for indoor greenery! The plants arrived in pristine condition, and their care guides made it incredibly simple for a beginner like me to keep them thriving.",
       image: "/persons/person1.svg",
     },
     {
@@ -17,14 +17,13 @@ export default function Reviews() {
     },
     {
       name: "Lii Thakur",
-      text: "Great designs and customer service — I'll buy again. Highly recommend the Calathea plant for any modern office environment.",
+      text: "Great designs and customer service - I'll buy again. Highly recommend the Calathea Orbifolia for any modern office environment.",
       image: "/persons/person3.svg",
     },
   ];
 
   return (
     <section className="max-w-6xl mx-auto px-4 sm:px-8 py-20 relative z-10">
-      {/* Section Title with Brackets */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -97,28 +96,24 @@ export default function Reviews() {
                     >
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
-                    {/* Star 2 */}
                     <svg
                       className="w-[18px] h-[18px] fill-[#FFB800] text-[#FFB800]"
                       viewBox="0 0 24 24"
                     >
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
-                    {/* Star 3 */}
                     <svg
                       className="w-[18px] h-[18px] fill-[#FFB800] text-[#FFB800]"
                       viewBox="0 0 24 24"
                     >
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
-                    {/* Star 4 */}
                     <svg
                       className="w-[18px] h-[18px] fill-[#FFB800] text-[#FFB800]"
                       viewBox="0 0 24 24"
                     >
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
-                    {/* Star 5 - Half Star */}
                     <svg className="w-[18px] h-[18px]" viewBox="0 0 24 24">
                       <defs>
                         <linearGradient id={`half-star-${idx}`}>
@@ -138,7 +133,6 @@ export default function Reviews() {
                 </div>
               </div>
 
-              {/* Review Text */}
               <div className="mt-2 grow">
                 <p className="text-white/80 text-[17px] leading-[1.65] font-normal tracking-wide pl-1">
                   {r.text}
