@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Planto
+
+Planto is a premium, high-end botanical store landing page designed to showcase and sell hand-curated indoor plants. The application features a sleek dark botanical theme, smooth micro-animations, glassmorphic UI components, and complete responsiveness.
+
+## Core Features
+
+- Modern Botanical Aesthetics: Designed with a deep, curated green and dark color palette, smooth gradients, and immersive typography.
+- Glassmorphism Design System: High-end translucent cards, sidebars, and navigation elements that seamlessly blend into the botanical background.
+- Advanced Animations: Viewport-triggered fade-ins, spring-based hover translations, and interactive rotations powered by Framer Motion.
+- Interactive Spotlight Showcase: A dynamic, animated slideshow showcasing featured high-oxygen plants with custom entry and exit transitions.
+- Responsive Navigation: A clean desktop layout that transforms into an immersive glassmorphic drawer on mobile devices.
+- High-Performance Rendering: Optimized assets, custom SVG vector frames, and next/image integration for efficient loading times.
+
+## Technology Stack
+
+- Framework: Next.js (App Router)
+- Core Logic: React and TypeScript
+- Animations: Framer Motion
+- Icons: Lucide React
+- Styling: Tailwind CSS (v4) with PostCSS
+- Package Manager: Bun / NPM
+
+## Project Structure
+
+- app/: Contains the Next.js App Router files.
+  - components/: Modular React components.
+    - Navbar.tsx: Desktop and mobile drawer navigation with animated transitions.
+    - Hero.tsx: Immersive hero section featuring hot-selling plants and introductory statistics.
+    - Card.tsx: Reusable high-end glassmorphic card component.
+    - ProductCard.tsx / ProductGrid.tsx: Grid showcasing top-selling products with spring hover transitions.
+    - Spotlight.tsx: Responsive high-oxygen showcase slider with independent image and text animations.
+    - Reviews.tsx: Customer reviews and star ratings using custom SVG components.
+    - Footer.tsx: Sophisticated footer containing footer links, newsletter sign-ups, and brand info.
+  - lib/: Utility files and static asset reference mappings.
+  - globals.css: Global styles, custom tailwind configurations, and background setups.
+- public/: Project assets including plant vectors, custom SVGs, logos, and illustration assets.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+Ensure you have Node.js and Bun (or another package manager like NPM, Yarn, or PNPM) installed on your local machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/JeetDas5/planto.git
+   cd planto
+   ```
+
+2. Install the dependencies:
+   ```bash
+   bun install
+   ```
+   Or using NPM:
+   ```bash
+   npm install
+   ```
+
+### Running the Development Server
+
+Start the local server:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
 bun dev
 ```
+Or using NPM:
+```bash
+npm run dev
+```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production-optimized build of the project, run:
+```bash
+bun run build
+```
+Or using NPM:
+```bash
+npm run build
+```
 
-## Learn More
+To start the production server after building:
+```bash
+bun start
+```
+Or using NPM:
+```bash
+npm run start
+```
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ by Jeet Das for Lemon Studios
