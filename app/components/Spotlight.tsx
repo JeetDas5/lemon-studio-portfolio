@@ -82,7 +82,7 @@ export default function Spotlight() {
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-8 py-20 relative z-10 overflow-visible">
+    <section className="max-w-6xl mx-auto px-4 sm:px-8 py-20 relative z-10 overflow-visible">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -120,19 +120,19 @@ export default function Spotlight() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="w-full relative"
       >
-        <div className="w-full relative bg-[#1e251a] border border-[#2e3728] rounded-[60px] p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center lg:items-stretch gap-12 lg:gap-16 min-h-[500px] hover:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.65)] hover:border-[#384332] transition-all duration-500 glass overflow-visible">
+        <div className="w-full relative bg-[#1e251a] border border-[#2e3728] rounded-[60px] px-6 py-12 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center lg:items-stretch gap-12 lg:gap-16 min-h-[500px] hover:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.65)] hover:border-[#384332] transition-all duration-500 glass overflow-visible">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIndex}
               initial="initial"
               animate="animate"
               exit="exit"
-              className="flex flex-col lg:flex-row items-center lg:items-stretch gap-12 lg:gap-16 w-full overflow-visible"
+              className="flex flex-col lg:flex-row items-center lg:items-stretch gap-2 md:gap-12 lg:gap-16 w-full overflow-visible"
             >
-              <div className="relative w-full lg:w-[42%] min-h-[300px] lg:min-h-full flex items-end justify-center lg:justify-start overflow-visible">
+              <div className="relative w-full lg:w-[42%] min-h-[220px] sm:min-h-[300px] lg:min-h-full flex items-end justify-center lg:justify-start overflow-visible">
                 <motion.div
                   variants={plantVariants}
-                  className="absolute left-[-100px] -top-10 w-[115%] sm:w-[125%] md:w-[150%] h-[115%] sm:h-[120%] md:h-[150%] pointer-events-none scale-150"
+                  className="absolute left-1/2 lg:left-[-100px] -translate-x-1/2 lg:translate-x-0 -top-20 lg:-top-10 w-[80%] sm:w-[70%] lg:w-[150%] h-[120%] lg:h-[150%] pointer-events-none scale-125 sm:scale-135 lg:scale-150"
                 >
                   <Image
                     src={currentSlide.image}

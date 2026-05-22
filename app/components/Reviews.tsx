@@ -23,7 +23,7 @@ export default function Reviews() {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto px-8 py-20 relative z-10">
+    <section className="max-w-6xl mx-auto px-4 sm:px-8 py-20 relative z-10">
       {/* Section Title with Brackets */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -63,7 +63,7 @@ export default function Reviews() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.7, ease: "easeOut", delay: idx * 0.18 }}
-            className="rounded-[60px] p-10 bg-[#1e251a] border border-[#2e3728] relative hover:-translate-y-2.5 hover:shadow-[0_25px_50px_-15px_rgba(0,0,0,0.6)] hover:border-[#384332] transition-all duration-500 flex flex-col justify-between h-full group glass"
+            className="rounded-[60px] p-6 sm:p-10 bg-[#1e251a] border border-[#2e3728] relative hover:-translate-y-2.5 hover:shadow-[0_25px_50px_-15px_rgba(0,0,0,0.6)] hover:border-[#384332] transition-all duration-500 flex flex-col justify-between h-full group glass"
           >
             <div className="flex flex-col gap-8 h-full">
               <div className="flex items-center gap-5">

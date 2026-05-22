@@ -21,9 +21,9 @@ export default function ProductCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.15 }}
-      className="glass rounded-b-[45px] rounded-t-[60px] p-8 pt-32 w-full h-[460px] bg-[#272f22] border border-white/5 mx-auto relative hover:-translate-y-3 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.7)] transition-all duration-500 group mt-28 flex flex-col justify-between"
+      className="glass rounded-b-[45px] rounded-t-[60px] p-6 sm:p-8 pt-32 w-full h-[460px] bg-[#272f22] border border-white/5 mx-auto relative hover:-translate-y-3 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.7)] transition-all duration-500 group mt-28 flex flex-col justify-between"
     >
-      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[150%] h-[420px] transition-transform duration-700 ease-out group-hover:-translate-y-4">
+      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[130%] sm:w-[150%] h-[380px] sm:h-[420px] transition-transform duration-700 ease-out group-hover:-translate-y-4">
         <Image
           src={img}
           alt={title}

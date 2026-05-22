@@ -20,7 +20,7 @@ export default function ProductGrid() {
     { title: "Calat 02 plant", price: "Rs. 659/-", img: plant6 },
   ];
   return (
-    <section className="w-full mx-auto px-8 py-20 relative z-10 overflow-hidden">
+    <section className="w-full mx-auto px-4 sm:px-8 py-20 relative z-10 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
